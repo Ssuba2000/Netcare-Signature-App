@@ -1,0 +1,109 @@
+/* styles.module.css */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .signatureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .canvas {
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .buttons {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .clearButton, .addButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .clearButton {
+    margin-right: 10px;
+  }
+  
+  .formGroup {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .label {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .signatureTable {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .signatureTable th, .signatureTable td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .signatureTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .signatureTable img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Media query for smaller screens (e.g., tablets) */
+  @media (max-width: 768px) {
+    .signatureContainer {
+      flex-direction: column;
+    }
+  
+    .canvas {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .buttons {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
